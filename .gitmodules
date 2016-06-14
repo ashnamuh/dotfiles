@@ -37,3 +37,6 @@
 [submodule "vim/bundle/vim-javascript-syntax"]
 	path = vim/bundle/vim-javascript-syntax
 	url = https://github.com/jelera/vim-javascript-syntax
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git

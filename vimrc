@@ -14,12 +14,13 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'The-NERD-Tree'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'ctrlp.vim'
-"Plugin 'vim-javascript'
 Plugin 'vim-javascript-syntax'
+Plugin 'supertab'
 "Plugin 'vim-airline'
 "Plugin 'vim-es6'
-call vundle#end()            " required
-filetype plugin indent on    " required
+"Plugin 'vim-javascript'
+call vundle#end()
+filetype plugin indent on
 
 "colorscheme Monokai
 
@@ -28,3 +29,4 @@ set number
 set expandtab
 set softtabstop=2 
 set tabstop=2
+set encoding=utf-8
