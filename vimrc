@@ -16,6 +16,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'ctrlp.vim'
 Plugin 'vim-javascript-syntax'
 Plugin 'supertab'
+Plugin 'solarized'
 Plugin 'vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-gitgutter'
@@ -42,7 +43,17 @@ autocmd VimEnter * call StartUp()
 " ctrlp setting
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
-                        
+syntax enable
+let g:solarized_termcolors=256 
+
+" airline setting
+let g:airline_symbols = {}
+let g:airline_theme='solarized'
+let g:airline#extensions#tabline#enabled = 1
+
+" gitgutter setting
+let g:gitgutter_signs = 0
+
 " basic settings
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=lightgray ctermbg=NONE
@@ -50,3 +61,17 @@ set expandtab
 set softtabstop=2 
 set tabstop=2
 set encoding=utf-8
+nmap <S-H> :bprev<CR>
+nmap <S-L> :bnext<CR>
+nmap <S-I> :w<CR>
+imap <C-L> <right>
+imap <C-H> <left>
+imap <C-J> <down>
+imap <C-K> <up>
+" window shortcuts
+nmap <F3> :split <CR>
+nmap <F4> :vsplit <CR>
+nmap <F5> :vertical resize -1<CR>
+nmap <F6> :vertical resize +1<CR>
+nmap <F7> :resize -1<cr>
+nmap <F8> :resize +1<cr>

@@ -11,3 +11,4 @@
 	br = branch
 	cm = commit
 	st = status
+  dd = reset --hard HEAD
