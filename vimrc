@@ -24,8 +24,25 @@ filetype plugin indent on
 
 "colorscheme Monokai
 
+" auto open Nerd Tree when there was no file on the command line
+function! StartUp()
+  if 0 == argc()
+    NERDTree
+    vertical resize 25
+  end
+endfunction
+
+" NERDTree environment
+let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.git$', 'node_modules$']
+autocmd VimEnter * call StartUp()
+
+" ctrlp environment
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 " basic settings
 set number
+highlight LineNr term=bold cterm=NONE ctermfg=lightgray ctermbg=NONE
 set expandtab
 set softtabstop=2 
 set tabstop=2
