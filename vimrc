@@ -13,6 +13,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'The-NERD-Tree'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'ctrlp.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
