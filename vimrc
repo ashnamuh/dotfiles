@@ -14,6 +14,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'The-NERD-Tree'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'ctrlp.vim'
+Plugin 'vim-javascript'
+"Plugin 'vim-airline'
+"Plugin 'vim-es6'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
