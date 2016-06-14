@@ -16,7 +16,9 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'ctrlp.vim'
 Plugin 'vim-javascript-syntax'
 Plugin 'supertab'
-"Plugin 'vim-airline'
+Plugin 'vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-gitgutter'
 "Plugin 'vim-es6'
 "Plugin 'vim-javascript'
 call vundle#end()
@@ -32,14 +34,15 @@ function! StartUp()
   end
 endfunction
 
-" NERDTree environment
+" NERDTree setting
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.git$', 'node_modules$']
 autocmd VimEnter * call StartUp()
 
-" ctrlp environment
+" ctrlp setting
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
+                        
 " basic settings
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=lightgray ctermbg=NONE
