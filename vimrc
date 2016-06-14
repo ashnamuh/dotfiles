@@ -64,6 +64,8 @@ set encoding=utf-8
 nmap <S-H> :bprev<CR>
 nmap <S-L> :bnext<CR>
 nmap <S-I> :w<CR>
+nmap <F2> :q<CR>
+" insert mode schortcuts
 imap <C-L> <right>
 imap <C-H> <left>
 imap <C-J> <down>
