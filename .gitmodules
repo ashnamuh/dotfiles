@@ -34,3 +34,6 @@
 [submodule "vim/bundle/vim-json"]
 	path = vim/bundle/vim-json
 	url = https://github.com/elzr/vim-json
+[submodule "vim/bundle/vim-javascript-syntax"]
+	path = vim/bundle/vim-javascript-syntax
+	url = https://github.com/jelera/vim-javascript-syntax
