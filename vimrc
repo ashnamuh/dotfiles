@@ -20,6 +20,7 @@ Plugin 'solarized'
 Plugin 'vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-gitgutter'
+Plugin 'vim-multiple-cursors'
 "Plugin 'vim-es6'
 "Plugin 'vim-javascript'
 call vundle#end()
@@ -51,6 +52,13 @@ let g:airline_symbols = {}
 let g:airline_theme='solarized'
 let g:airline#extensions#tabline#enabled = 1
 
+" multiple cursors setting
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-m>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
+
 " gitgutter setting
 let g:gitgutter_signs = 0
 
@@ -61,6 +69,8 @@ set expandtab
 set softtabstop=2 
 set tabstop=2
 set encoding=utf-8
+set shiftwidth=2
+set smartindent
 nmap <S-H> :bprev<CR>
 nmap <S-L> :bnext<CR>
 nmap <S-I> :w<CR>
