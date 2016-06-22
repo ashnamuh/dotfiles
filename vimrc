@@ -15,7 +15,11 @@ Plug 'vim-gitgutter'
 Plug 'junegunn/rainbow_parentheses.vim'
 call plug#end()
 
-autocmd VimEnter * RainbowParentheses
+" NERDTree
+nmap <Leader>b :NERDTreeToggle <CR>
+
+" RainbowParentheses 
+nmap <F9> :RainbowParentheses!! <CR>
 
 " color scheme setting
 syntax on
