@@ -16,6 +16,10 @@ Plug 'vim-gitgutter'
 Plug 'junegunn/rainbow_parentheses.vim'
 call plug#end()
 
+" aitline setting
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='luna'
+
 " NERDTree
 noremap <Leader>b :NERDTreeToggle <CR>
 
@@ -80,16 +84,20 @@ inoremap <S-Down> <NOP>
 inoremap <S-Left> <NOP>
 inoremap <S-Right> <NOP>
 
+" moving buffer shortcut
+noremap <S-H> :bprev<CR>
+noremap <S-L> :bnext<CR>
+
 " shortcut setting
-nmap <S-H> :bprev<CR>
-nmap <S-L> :bnext<CR>
-nmap <S-I> :w<CR>
-nmap <F2> :q<CR>
+noremap <S-H> :bprev<CR>
+noremap <S-L> :bnext<CR>
+noremap <S-I> :w<CR>
+noremap <F2> :q<CR>
 
 " window shortcuts
-nmap <F3> :split <CR>
-nmap <F4> :vsplit <CR>
-nmap <F5> :vertical resize -1<CR>
-nmap <F6> :vertical resize +1<CR>
-nmap <F7> :resize -1<cr>
-nmap <F8> :resize +1<cr>
+noremap <F3> :split <CR>
+noremap <F4> :vsplit <CR>
+noremap <F5> :vertical resize -1<CR>
+noremap <F6> :vertical resize +1<CR>
+noremap <F7> :resize -1<cr>
+noremap <F8> :resize +1<cr>
