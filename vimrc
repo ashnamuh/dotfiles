@@ -22,6 +22,9 @@ noremap <Leader>b :NERDTreeToggle <CR>
 " RainbowParentheses 
 noremap <F9> :RainbowParentheses!! <CR>
 
+" gitgutter setting
+let g:gitgutter_signs = 0
+
 " color scheme setting
 syntax on
 "let g:solarized_termcolors=256
