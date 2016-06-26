@@ -17,10 +17,10 @@ Plug 'junegunn/rainbow_parentheses.vim'
 call plug#end()
 
 " NERDTree
-nmap <Leader>b :NERDTreeToggle <CR>
+noremap <Leader>b :NERDTreeToggle <CR>
 
 " RainbowParentheses 
-nmap <F9> :RainbowParentheses!! <CR>
+noremap <F9> :RainbowParentheses!! <CR>
 
 " color scheme setting
 syntax on
@@ -82,3 +82,11 @@ nmap <S-H> :bprev<CR>
 nmap <S-L> :bnext<CR>
 nmap <S-I> :w<CR>
 nmap <F2> :q<CR>
+
+" window shortcuts
+nmap <F3> :split <CR>
+nmap <F4> :vsplit <CR>
+nmap <F5> :vertical resize -1<CR>
+nmap <F6> :vertical resize +1<CR>
+nmap <F7> :resize -1<cr>
+nmap <F8> :resize +1<cr>
