@@ -16,9 +16,20 @@ Plug 'vim-gitgutter'
 Plug 'junegunn/rainbow_parentheses.vim'
 call plug#end()
 
-" aitline setting
+" airline setting
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='luna'
+
+" ctrlp setting
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard'],
+    \ 2: ['.ctrlp', 'bash -c "cd %s && git ls-files -co --exclude-standard"'],
+    \ },
+  \ }
+
+" supertab setting
+let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " NERDTree
 noremap <Leader>b :NERDTreeToggle <CR>
