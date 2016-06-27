@@ -3,17 +3,24 @@ dotfiles
 
 dotfiles for [me](https://github.com/ashramus)
 
-vim and git configuration, etc.
+vim, git configuration, etc.
 
 Usage
 ----------
 
+clone remote branch into local branch
+
+`$ git clone https://github.com/ashnamuh/dotfiles.git ~/dotfiles`
+
+
+create symbolic link files
 ```
-$ git clone https://github.com/ashramus/dotfiles.git ~/dotfiles
-$ cd ~/dotfiles
-$ git submodule init
-$ git submodule update
+$ ln -s ~/dotfiles/vimrc ~/.vimrc
+$ ln -s ~/dotfiles/vim ~/.vim
+$ ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ```
+
+type `$ vim` and `:PlugInstall`
 
 License
 -------
