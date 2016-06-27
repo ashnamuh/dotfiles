@@ -1,5 +1,6 @@
 " Load plugins
 call plug#begin('~/.vim/plugged')
+Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'ervandew/supertab'
 Plug 'jelera/vim-javascript-syntax'
@@ -12,13 +13,12 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'vim-gitgutter'
 Plug 'junegunn/rainbow_parentheses.vim'
 call plug#end()
 
 " airline setting
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='luna'
+let g:airline_theme='simple'
 
 " ctrlp setting
 let g:ctrlp_user_command = {
