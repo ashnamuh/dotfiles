@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
+Plug 'elzr/vim-json'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'kien/ctrlp.vim'
