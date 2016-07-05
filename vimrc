@@ -21,10 +21,6 @@ let g:neocomplete#enable_at_startup = 1
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><Space> pumvisible() ? "\<C-y>\<Space>" : "\<Space>"
 
-" airline setting
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='simple'
-
 " ctrlp setting
 let g:ctrlp_user_command = {
   \ 'types': {
@@ -44,10 +40,13 @@ let g:gitgutter_signs = 0
 
 " color scheme setting
 syntax on
-"let g:solarized_termcolors=256
-"set t_Co=256 
+set t_Co=16 
 set background=dark
 colorscheme solarized
+
+" airline setting
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='solarized'
 
 " syntastic
 set statusline+=%#warningmsg#
