@@ -9,12 +9,17 @@ Plug 'kien/ctrlp.vim'
 Plug 'raimondi/delimitmate'
 Plug 'Shougo/deoplete.nvim'
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
 Plug 'shougo/neocomplete.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
+
+" nerd comment
+let g:NERDSpaceDelims = 1
+let g:NERDDefaultAlign = 'left'
 
 " neocomplete setting 
 let g:neocomplete#enable_at_startup = 1
