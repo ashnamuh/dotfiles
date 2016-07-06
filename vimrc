@@ -34,7 +34,8 @@ let g:ctrlp_user_command = {
     \ },
   \ }
 
-" NERDTree
+" nerdtree
+let NERDTreeIgnore = ['\.git$', 'node_modules$']
 noremap <Leader>b :NERDTreeToggle <CR>
 
 " RainbowParentheses 
@@ -107,8 +108,6 @@ noremap <S-L> :bnext<CR>
 " shortcut setting
 noremap <S-H> :bprev<CR>
 noremap <S-L> :bnext<CR>
-noremap <S-I> :w<CR>
-noremap <F2> :q<CR>
 
 " window shortcuts
 noremap <F3> :split <CR>
