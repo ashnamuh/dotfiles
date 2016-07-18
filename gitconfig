@@ -14,3 +14,4 @@
  	dd = reset --hard HEAD
 [core]
   editor = vim
+	excludesfile = ~/.gitignore
