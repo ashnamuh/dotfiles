@@ -6,7 +6,7 @@
 [push]
 	default = simple
 [alias]
-	lg = log --decorate=short
+	lg = log --decorate --oneline --graph
 	co = checkout
 	br = branch
 	cm = commit
