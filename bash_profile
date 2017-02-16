@@ -15,3 +15,4 @@ alias bsrr='brew services run redis'
 
 alias bssp='brew services stop postgresql'
 alias bssr='brew services stop redis'
+alias bssall='brew services stop --all'
