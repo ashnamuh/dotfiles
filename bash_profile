@@ -22,3 +22,7 @@ alias lnd0='ssh lobby@lnd0.openknowl.com'
 alias lnd1='ssh lobby@lnd1.openknowl.com'
 alias lnd5='ssh lobby@lnd5.openknowl.com'
 alias lnd3='ssh lobby@lnd3.openknowl.com'
+alias lnd8='ssh lobby@lnd8.openknowl.com'
+
+export VAGRANT_DEFAULT_PROVIDER="virtualbox"
+
