@@ -7,7 +7,10 @@
 	"folder_exclude_patterns":
 	[
 		"node_modules",
-		".git"
+		".git",
+		"dist",
+		"upload",
+		"uploads"
 	],
 	"font_face": "D2Coding",
 	"font_size": 14,
