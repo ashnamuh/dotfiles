@@ -13,6 +13,9 @@
 		"uploads"
 	],
 	"font_face": "D2Coding",
+	"font_options":
+	[
+	],
 	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
@@ -24,6 +27,5 @@
 	"theme": "Boxy Ocean.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": "true",
-	"font_options": [],
+	"word_wrap": "true"
 }
