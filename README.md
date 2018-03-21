@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-dotfiles for [me](https://github.com/ashramus)
+dotfiles for [me](https://github.com/ashnamuh)
 
 vim, git configuration, etc.
 
